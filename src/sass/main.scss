@@ -23,6 +23,20 @@ $very-dark-cyan:hsl(179, 100%, 13%);/
 
 * {
   margin: 0;
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 50px;
+  @media (min-width: 992px) {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .body{
@@ -31,6 +45,7 @@ $very-dark-cyan:hsl(179, 100%, 13%);/
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  background-color: $very-light-gray;
 }
 .main {
   margin: 88px 24px;
